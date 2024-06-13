@@ -1,0 +1,48 @@
+body {
+
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dice-button {
+    padding: 10px 20px; /* Düğme iç içe boşluğu */
+    font-size: 16px; /* Yazı boyutu */
+    background-color: #4CAF50; /* Arkaplan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* İmleç türü */
+    transition: background-color 0.3s ease; /* Arkaplan geçişi */
+    border-radius: 20px;
+  }
+  
+  .dice-button:hover {
+    background-color: #45a049; /* Fare üzerine gelince arkaplan rengi */
+  }
+
+.dice-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.dice {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
