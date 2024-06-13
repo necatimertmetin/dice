@@ -1,5 +1,4 @@
 body {
-
     height: 100vh;
     margin: 0;
     background-color: #333;
@@ -7,42 +6,42 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 .dice-button {
-    padding: 10px 20px; /* Düğme iç içe boşluğu */
-    font-size: 16px; /* Yazı boyutu */
-    background-color: #4CAF50; /* Arkaplan rengi */
-    color: white; /* Yazı rengi */
-    border: none; /* Kenarlık yok */
-    cursor: pointer; /* İmleç türü */
-    transition: background-color 0.3s ease; /* Arkaplan geçişi */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     border-radius: 20px;
-  }
-  
-  .dice-button:hover {
-    background-color: #45a049; /* Fare üzerine gelince arkaplan rengi */
-  }
+}
+
+.dice-button:hover {
+    background-color: #45a049;
+}
 
 .dice-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    max-width: 80%; /* Orta büyüklükte bir maksimum genişlik */
+    margin: 20px auto; /* Sayfanın ortasında hizalamak için */
 }
 
 .dice {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
+    width: 200px; /* Zar resminin genişliği */
+    height: auto; /* Yüksekliği otomatik olarak ayarla */
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10%;
 }
 
 img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 50px;
 }
+
